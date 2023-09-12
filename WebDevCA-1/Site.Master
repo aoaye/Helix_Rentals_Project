@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebDevCA_1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Helix Rentals</title>
+    <link rel="icon" type="image/x-icon" href="/Images/websilhouette.png">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <%--<header>
+            <table>         
+                <tr>
+                    <td><img src="Images/websilhouette.png" alt="Logo"/></td>
+                    <td><h1>Helix Rentals</h1></td>
+                    <td></td>
+                </tr>
+            </table>   
+        </header>--%>
+        <div>
+            <nav class="nav-bar">
+                <table class="title">         
+                <tr>
+                    <td><img src="Images/websilhouette.png" alt="Logo" href="index.aspx"/></td>
+                    <td><h1 href="index.aspx">Helix Rentals</h1></td>
+                </tr>
+            </table>  
+                <ul class="nav">
+                    <li><a href="index.aspx">Home</a></li>
+                    <li><a href="register.aspx">Register</a></li>
+                    <li><a href="rentals.aspx">Rentals</a></li>
+                    <li><a href="Staff.aspx">Staff</a></li>
+                    <li><a href="AboutUs.aspx">About Us</a></li>
+                    <li><a href="FAQ.aspx">FAQ</a></li>
+                </ul>
+            </nav>
+
+
+            <div id="wrapper">
+                <main id="pagemain">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        Content
+                    </asp:ContentPlaceHolder>
+                </main>
+
+            </div>
+
+            <footer>
+                <table>
+                    <tr>
+                        <td><a href="index.aspx">Home</a></td>
+                        <td><a href="rentals.aspx">Rentals</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Staff.aspx">Staff</a></td>
+                        <%--<td><a href="customer.html">Customer Reviews</a></td>--%>
+                    </tr>
+                    <tr>
+                        <td><a href="FAQ.aspx">FAQ</a></td>
+                        <td><a href="AboutUs.aspx">About Us</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="sitemap.html">Sitemap</a></td>
+                    </tr>
+                </table>
+                <p>Copyright &#169; 2022 Helix Rentals</p>
+            </footer>
+        </div>
+    </form>
+</body>
+    <script src="rentals.js"></script>
+    <script src="CA.js"></script>
+</html>
